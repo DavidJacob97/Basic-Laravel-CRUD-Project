@@ -10,7 +10,7 @@ class ContactController extends Controller
     //
     public function index(Request $request){
         $contact = Contact::all();
-        return view('Welcome')->with("contact", $contact);
+        return view('welcome')->with("contact", $contact);
     }
 
     public function add(){
